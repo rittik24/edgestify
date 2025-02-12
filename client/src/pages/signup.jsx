@@ -29,7 +29,7 @@ export default function Signup() {
   const Register = async () => {
     try {
       let r = await fetch(
-        `http://localhost:8080/user/register`,
+        `https://edgestifybackend.onrender.com/user/register`,
         {
           method: "POST",
           body: JSON.stringify(cred),

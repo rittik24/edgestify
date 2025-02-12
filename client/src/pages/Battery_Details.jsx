@@ -26,7 +26,7 @@ const Battery_Details = () => {
   // get a single battery details
   const singleBatteryData = async () => {
     try {
-      let r = await fetch(`http://localhost:8080/battery/${id}`);
+      let r = await fetch(`https://edgestifybackend.onrender.com/battery/${id}`);
       let d = await r.json();
       setSingleData(d);
     } catch (error) {
@@ -37,7 +37,7 @@ const Battery_Details = () => {
   // add battery to the user cart
   const AddToThecart = async (id) => {
     try {
-      let r = await fetch(`http://localhost:8080/user/cart_product/add/${id}`, {
+      let r = await fetch(`https://edgestifybackend.onrender.com/user/cart_product/add/${id}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

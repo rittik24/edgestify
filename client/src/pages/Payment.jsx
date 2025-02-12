@@ -14,7 +14,7 @@ const Payment = () => {
   console.log("total", total);
 
   const getCartProducts = () => {
-    fetch("http://localhost:8080/user/cart_product", {
+    fetch("https://edgestifybackend.onrender.com/user/cart_product", {
       method: "GET",
       headers: {
         "Content-type": "application/json",
